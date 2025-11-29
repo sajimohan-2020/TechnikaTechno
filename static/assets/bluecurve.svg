@@ -1,0 +1,6 @@
+  const faqList = (data.serviceDetails.translations[0].faq && data.serviceDetails.translations[0].faq.length > 0)
+    ? data.serviceDetails.translations[0].faq.map(f => ({
+        q: f.accordion_heading,
+        a: f.accordion_content
+      }))
+    : faqs;
